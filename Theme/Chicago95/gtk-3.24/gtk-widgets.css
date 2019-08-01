@@ -1510,10 +1510,9 @@ infobar {
 }
 
 menu {
-border-left: 3px solid transparent;
-border-right: 3px solid transparent;
-border-top: 2px solid transparent;
-border-bottom: 2px solid transparent;
+	border: 3px solid transparent;
+	border-image: url("/home/seeseemelk/dev/Chicago95/Theme/Chicago95/gtk-3.24/assets/menu-border.png") 3 3 3 3 repeat;
+	padding: 3px;
 }
 
 /***********
@@ -2709,10 +2708,12 @@ headerbar entry {
 }
 
 /* we dont want any extra padding in those */
-menuitem > window,
-window > menu {
-    padding: 0px;
+menuitem > window {
+	margin-left: 10px;
 }
+/*window > menu {
+    padding: 0px;
+}*/
 
 .titlebar button  {
     margin: 0px;
